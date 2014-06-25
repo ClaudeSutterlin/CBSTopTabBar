@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F326EF4195B654C0050D24F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F326EF3195B654C0050D24F /* Foundation.framework */; };
+		7F326EF6195B654C0050D24F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F326EF5195B654C0050D24F /* CoreGraphics.framework */; };
+		7F326EF8195B654C0050D24F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F326EF7195B654C0050D24F /* UIKit.framework */; };
+		7F326EFE195B654C0050D24F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F326EFC195B654C0050D24F /* InfoPlist.strings */; };
+		7F326F00195B654C0050D24F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F326EFF195B654C0050D24F /* main.m */; };
+		7F326F04195B654C0050D24F /* CBSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F326F03195B654C0050D24F /* CBSAppDelegate.m */; };
+		7F326F06195B654C0050D24F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F326F05195B654C0050D24F /* Images.xcassets */; };
+		7F326F0D195B654C0050D24F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F326F0C195B654C0050D24F /* XCTest.framework */; };
+		7F326F0E195B654C0050D24F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F326EF3195B654C0050D24F /* Foundation.framework */; };
+		7F326F0F195B654C0050D24F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F326EF7195B654C0050D24F /* UIKit.framework */; };
+		7F326F17195B654C0050D24F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F326F15195B654C0050D24F /* InfoPlist.strings */; };
+		7F326F19195B654C0050D24F /* CBSTopTabBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F326F18195B654C0050D24F /* CBSTopTabBarDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F326F10195B654C0050D24F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F326EE8195B654C0050D24F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F326EEF195B654C0050D24F;
+			remoteInfo = CBSTopTabBarDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F326EF0195B654C0050D24F /* CBSTopTabBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBSTopTabBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F326EF3195B654C0050D24F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F326EF5195B654C0050D24F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F326EF7195B654C0050D24F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F326EFB195B654C0050D24F /* CBSTopTabBarDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CBSTopTabBarDemo-Info.plist"; sourceTree = "<group>"; };
+		7F326EFD195B654C0050D24F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F326EFF195B654C0050D24F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F326F01195B654C0050D24F /* CBSTopTabBarDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBSTopTabBarDemo-Prefix.pch"; sourceTree = "<group>"; };
+		7F326F02195B654C0050D24F /* CBSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBSAppDelegate.h; sourceTree = "<group>"; };
+		7F326F03195B654C0050D24F /* CBSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBSAppDelegate.m; sourceTree = "<group>"; };
+		7F326F05195B654C0050D24F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7F326F0B195B654C0050D24F /* CBSTopTabBarDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBSTopTabBarDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F326F0C195B654C0050D24F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7F326F14195B654C0050D24F /* CBSTopTabBarDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CBSTopTabBarDemoTests-Info.plist"; sourceTree = "<group>"; };
+		7F326F16195B654C0050D24F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F326F18195B654C0050D24F /* CBSTopTabBarDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBSTopTabBarDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F326EED195B654C0050D24F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F326EF6195B654C0050D24F /* CoreGraphics.framework in Frameworks */,
+				7F326EF8195B654C0050D24F /* UIKit.framework in Frameworks */,
+				7F326EF4195B654C0050D24F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F326F08195B654C0050D24F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F326F0D195B654C0050D24F /* XCTest.framework in Frameworks */,
+				7F326F0F195B654C0050D24F /* UIKit.framework in Frameworks */,
+				7F326F0E195B654C0050D24F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F326EE7195B654C0050D24F = {
+			isa = PBXGroup;
+			children = (
+				7F326EF9195B654C0050D24F /* CBSTopTabBarDemo */,
+				7F326F12195B654C0050D24F /* CBSTopTabBarDemoTests */,
+				7F326EF2195B654C0050D24F /* Frameworks */,
+				7F326EF1195B654C0050D24F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F326EF1195B654C0050D24F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F326EF0195B654C0050D24F /* CBSTopTabBarDemo.app */,
+				7F326F0B195B654C0050D24F /* CBSTopTabBarDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F326EF2195B654C0050D24F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F326EF3195B654C0050D24F /* Foundation.framework */,
+				7F326EF5195B654C0050D24F /* CoreGraphics.framework */,
+				7F326EF7195B654C0050D24F /* UIKit.framework */,
+				7F326F0C195B654C0050D24F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F326EF9195B654C0050D24F /* CBSTopTabBarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7F326F02195B654C0050D24F /* CBSAppDelegate.h */,
+				7F326F03195B654C0050D24F /* CBSAppDelegate.m */,
+				7F326F05195B654C0050D24F /* Images.xcassets */,
+				7F326EFA195B654C0050D24F /* Supporting Files */,
+			);
+			path = CBSTopTabBarDemo;
+			sourceTree = "<group>";
+		};
+		7F326EFA195B654C0050D24F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F326EFB195B654C0050D24F /* CBSTopTabBarDemo-Info.plist */,
+				7F326EFC195B654C0050D24F /* InfoPlist.strings */,
+				7F326EFF195B654C0050D24F /* main.m */,
+				7F326F01195B654C0050D24F /* CBSTopTabBarDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F326F12195B654C0050D24F /* CBSTopTabBarDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F326F18195B654C0050D24F /* CBSTopTabBarDemoTests.m */,
+				7F326F13195B654C0050D24F /* Supporting Files */,
+			);
+			path = CBSTopTabBarDemoTests;
+			sourceTree = "<group>";
+		};
+		7F326F13195B654C0050D24F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F326F14195B654C0050D24F /* CBSTopTabBarDemoTests-Info.plist */,
+				7F326F15195B654C0050D24F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F326EEF195B654C0050D24F /* CBSTopTabBarDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F326F1C195B654C0050D24F /* Build configuration list for PBXNativeTarget "CBSTopTabBarDemo" */;
+			buildPhases = (
+				7F326EEC195B654C0050D24F /* Sources */,
+				7F326EED195B654C0050D24F /* Frameworks */,
+				7F326EEE195B654C0050D24F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CBSTopTabBarDemo;
+			productName = CBSTopTabBarDemo;
+			productReference = 7F326EF0195B654C0050D24F /* CBSTopTabBarDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F326F0A195B654C0050D24F /* CBSTopTabBarDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F326F1F195B654C0050D24F /* Build configuration list for PBXNativeTarget "CBSTopTabBarDemoTests" */;
+			buildPhases = (
+				7F326F07195B654C0050D24F /* Sources */,
+				7F326F08195B654C0050D24F /* Frameworks */,
+				7F326F09195B654C0050D24F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F326F11195B654C0050D24F /* PBXTargetDependency */,
+			);
+			name = CBSTopTabBarDemoTests;
+			productName = CBSTopTabBarDemoTests;
+			productReference = 7F326F0B195B654C0050D24F /* CBSTopTabBarDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F326EE8195B654C0050D24F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CBS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Coffee Bean Studios LLC";
+				TargetAttributes = {
+					7F326F0A195B654C0050D24F = {
+						TestTargetID = 7F326EEF195B654C0050D24F;
+					};
+				};
+			};
+			buildConfigurationList = 7F326EEB195B654C0050D24F /* Build configuration list for PBXProject "CBSTopTabBarDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F326EE7195B654C0050D24F;
+			productRefGroup = 7F326EF1195B654C0050D24F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F326EEF195B654C0050D24F /* CBSTopTabBarDemo */,
+				7F326F0A195B654C0050D24F /* CBSTopTabBarDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F326EEE195B654C0050D24F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F326EFE195B654C0050D24F /* InfoPlist.strings in Resources */,
+				7F326F06195B654C0050D24F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F326F09195B654C0050D24F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F326F17195B654C0050D24F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F326EEC195B654C0050D24F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F326F00195B654C0050D24F /* main.m in Sources */,
+				7F326F04195B654C0050D24F /* CBSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F326F07195B654C0050D24F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F326F19195B654C0050D24F /* CBSTopTabBarDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F326F11195B654C0050D24F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F326EEF195B654C0050D24F /* CBSTopTabBarDemo */;
+			targetProxy = 7F326F10195B654C0050D24F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F326EFC195B654C0050D24F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F326EFD195B654C0050D24F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7F326F15195B654C0050D24F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F326F16195B654C0050D24F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F326F1A195B654C0050D24F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7F326F1B195B654C0050D24F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F326F1D195B654C0050D24F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBSTopTabBarDemo/CBSTopTabBarDemo-Prefix.pch";
+				INFOPLIST_FILE = "CBSTopTabBarDemo/CBSTopTabBarDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F326F1E195B654C0050D24F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBSTopTabBarDemo/CBSTopTabBarDemo-Prefix.pch";
+				INFOPLIST_FILE = "CBSTopTabBarDemo/CBSTopTabBarDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7F326F20195B654C0050D24F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CBSTopTabBarDemo.app/CBSTopTabBarDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBSTopTabBarDemo/CBSTopTabBarDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CBSTopTabBarDemoTests/CBSTopTabBarDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7F326F21195B654C0050D24F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CBSTopTabBarDemo.app/CBSTopTabBarDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBSTopTabBarDemo/CBSTopTabBarDemo-Prefix.pch";
+				INFOPLIST_FILE = "CBSTopTabBarDemoTests/CBSTopTabBarDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F326EEB195B654C0050D24F /* Build configuration list for PBXProject "CBSTopTabBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F326F1A195B654C0050D24F /* Debug */,
+				7F326F1B195B654C0050D24F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F326F1C195B654C0050D24F /* Build configuration list for PBXNativeTarget "CBSTopTabBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F326F1D195B654C0050D24F /* Debug */,
+				7F326F1E195B654C0050D24F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7F326F1F195B654C0050D24F /* Build configuration list for PBXNativeTarget "CBSTopTabBarDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F326F20195B654C0050D24F /* Debug */,
+				7F326F21195B654C0050D24F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F326EE8195B654C0050D24F /* Project object */;
+}
