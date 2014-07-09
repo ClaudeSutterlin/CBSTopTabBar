@@ -7,16 +7,53 @@
 //
 
 #import "CBSAppDelegate.h"
+#import "CBSTopTabBarController.h"
+#import "CBSDemoViewController.h"
 
 @implementation CBSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    [self setCustomAppearance];
+    
+    CBSDemoViewController *vc1 = [[CBSDemoViewController alloc] initWithNibName:@"CBSDemoViewController" bundle:nil];
+    vc1.view.backgroundColor = [UIColor redColor];
+    vc1.title = @"First";
+    
+    CBSDemoViewController *vc2 = [[CBSDemoViewController alloc] initWithNibName:@"CBSDemoViewController" bundle:nil];
+    vc2.view.backgroundColor = [UIColor greenColor];
+    vc2.title = @"Second";
+
+    CBSDemoViewController *vc3 = [[CBSDemoViewController alloc] initWithNibName:@"CBSDemoViewController" bundle:nil];
+    vc3.view.backgroundColor = [UIColor blueColor];
+    vc3.title = @"Third";
+    
+    CBSTopTabBarController *topBarController = [[CBSTopTabBarController alloc] initWithViewControllers: @[vc1, vc2, vc3]];
+    topBarController.title = @"CBS Bar Demo";
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: topBarController];
+    navController.navigationBar.translucent = NO;
+    
+    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void) setCustomAppearance{
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.19 green:0.19 blue:0.19 alpha:1]];
+    [[UINavigationBar appearance] setBackgroundColor: [UIColor colorWithRed:0.19 green:0.19 blue:0.19 alpha:1]];
+    [[UINavigationBar appearance] setTintColor: [UIColor whiteColor]];
+    NSShadow * shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor whiteColor];
+    shadow.shadowOffset = CGSizeMake(0, 0);
+    
+    NSDictionary * navBarTitleTextAttributes = @{ NSForegroundColorAttributeName : [UIColor whiteColor],
+                                                  NSShadowAttributeName          : shadow,
+                                                  NSFontAttributeName            : [UIFont systemFontOfSize: 17.0]};
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:navBarTitleTextAttributes];
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

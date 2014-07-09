@@ -19,6 +19,9 @@
 		7F326F0F195B654C0050D24F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F326EF7195B654C0050D24F /* UIKit.framework */; };
 		7F326F17195B654C0050D24F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F326F15195B654C0050D24F /* InfoPlist.strings */; };
 		7F326F19195B654C0050D24F /* CBSTopTabBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F326F18195B654C0050D24F /* CBSTopTabBarDemoTests.m */; };
+		7F326F25195B65900050D24F /* CBSDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F326F23195B65900050D24F /* CBSDemoViewController.m */; };
+		7F326F26195B65900050D24F /* CBSDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F326F24195B65900050D24F /* CBSDemoViewController.xib */; };
+		7F326F2C195B65EC0050D24F /* CBSTopTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F326F2A195B65EC0050D24F /* CBSTopTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		7F326F14195B654C0050D24F /* CBSTopTabBarDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CBSTopTabBarDemoTests-Info.plist"; sourceTree = "<group>"; };
 		7F326F16195B654C0050D24F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7F326F18195B654C0050D24F /* CBSTopTabBarDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBSTopTabBarDemoTests.m; sourceTree = "<group>"; };
+		7F326F22195B65900050D24F /* CBSDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBSDemoViewController.h; path = ../CBSDemoViewController.h; sourceTree = "<group>"; };
+		7F326F23195B65900050D24F /* CBSDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBSDemoViewController.m; path = ../CBSDemoViewController.m; sourceTree = "<group>"; };
+		7F326F24195B65900050D24F /* CBSDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CBSDemoViewController.xib; path = ../CBSDemoViewController.xib; sourceTree = "<group>"; };
+		7F326F29195B65EC0050D24F /* CBSTopTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSTopTabBarController.h; sourceTree = "<group>"; };
+		7F326F2A195B65EC0050D24F /* CBSTopTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSTopTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,8 @@
 		7F326EF9195B654C0050D24F /* CBSTopTabBarDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7F326F28195B65C90050D24F /* CBSTopTabBar */,
+				7F326F27195B65950050D24F /* Demo View */,
 				7F326F02195B654C0050D24F /* CBSAppDelegate.h */,
 				7F326F03195B654C0050D24F /* CBSAppDelegate.m */,
 				7F326F05195B654C0050D24F /* Images.xcassets */,
@@ -142,6 +152,25 @@
 				7F326F15195B654C0050D24F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F326F27195B65950050D24F /* Demo View */ = {
+			isa = PBXGroup;
+			children = (
+				7F326F22195B65900050D24F /* CBSDemoViewController.h */,
+				7F326F23195B65900050D24F /* CBSDemoViewController.m */,
+				7F326F24195B65900050D24F /* CBSDemoViewController.xib */,
+			);
+			name = "Demo View";
+			sourceTree = "<group>";
+		};
+		7F326F28195B65C90050D24F /* CBSTopTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				7F326F29195B65EC0050D24F /* CBSTopTabBarController.h */,
+				7F326F2A195B65EC0050D24F /* CBSTopTabBarController.m */,
+			);
+			name = CBSTopTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F326F26195B65900050D24F /* CBSDemoViewController.xib in Resources */,
 				7F326EFE195B654C0050D24F /* InfoPlist.strings in Resources */,
 				7F326F06195B654C0050D24F /* Images.xcassets in Resources */,
 			);
@@ -242,6 +272,8 @@
 			files = (
 				7F326F00195B654C0050D24F /* main.m in Sources */,
 				7F326F04195B654C0050D24F /* CBSAppDelegate.m in Sources */,
+				7F326F25195B65900050D24F /* CBSDemoViewController.m in Sources */,
+				7F326F2C195B65EC0050D24F /* CBSTopTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +470,7 @@
 				7F326F1E195B654C0050D24F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F326F1F195B654C0050D24F /* Build configuration list for PBXNativeTarget "CBSTopTabBarDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +479,7 @@
 				7F326F21195B654C0050D24F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
