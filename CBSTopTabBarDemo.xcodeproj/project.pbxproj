@@ -21,7 +21,13 @@
 		7F326F19195B654C0050D24F /* CBSTopTabBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F326F18195B654C0050D24F /* CBSTopTabBarDemoTests.m */; };
 		7F326F25195B65900050D24F /* CBSDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F326F23195B65900050D24F /* CBSDemoViewController.m */; };
 		7F326F26195B65900050D24F /* CBSDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F326F24195B65900050D24F /* CBSDemoViewController.xib */; };
-		7F326F2C195B65EC0050D24F /* CBSTopTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F326F2A195B65EC0050D24F /* CBSTopTabBarController.m */; };
+		7F4ECABB1988245600566C51 /* 01-refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4ECAB61988245600566C51 /* 01-refresh.png */; };
+		7F4ECABC1988245600566C51 /* 02-redo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4ECAB71988245600566C51 /* 02-redo.png */; };
+		7F4ECABD1988245600566C51 /* 03-loopback.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4ECAB81988245600566C51 /* 03-loopback.png */; };
+		7F4ECABE1988245600566C51 /* 04-squiggle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4ECAB91988245600566C51 /* 04-squiggle.png */; };
+		7F4ECABF1988245600566C51 /* 05-shuffle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4ECABA1988245600566C51 /* 05-shuffle.png */; };
+		7F4ECAC71988673500566C51 /* CBSTopTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4ECAC41988673500566C51 /* CBSTopTabBarButton.m */; };
+		7F4ECAC81988673500566C51 /* CBSTopTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4ECAC61988673500566C51 /* CBSTopTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +60,15 @@
 		7F326F22195B65900050D24F /* CBSDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBSDemoViewController.h; path = ../CBSDemoViewController.h; sourceTree = "<group>"; };
 		7F326F23195B65900050D24F /* CBSDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBSDemoViewController.m; path = ../CBSDemoViewController.m; sourceTree = "<group>"; };
 		7F326F24195B65900050D24F /* CBSDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CBSDemoViewController.xib; path = ../CBSDemoViewController.xib; sourceTree = "<group>"; };
-		7F326F29195B65EC0050D24F /* CBSTopTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSTopTabBarController.h; sourceTree = "<group>"; };
-		7F326F2A195B65EC0050D24F /* CBSTopTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSTopTabBarController.m; sourceTree = "<group>"; };
+		7F4ECAB61988245600566C51 /* 01-refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-refresh.png"; sourceTree = "<group>"; };
+		7F4ECAB71988245600566C51 /* 02-redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-redo.png"; sourceTree = "<group>"; };
+		7F4ECAB81988245600566C51 /* 03-loopback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03-loopback.png"; sourceTree = "<group>"; };
+		7F4ECAB91988245600566C51 /* 04-squiggle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04-squiggle.png"; sourceTree = "<group>"; };
+		7F4ECABA1988245600566C51 /* 05-shuffle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "05-shuffle.png"; sourceTree = "<group>"; };
+		7F4ECAC31988673500566C51 /* CBSTopTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBSTopTabBarButton.h; path = CBSTopTabBar/CBSTopTabBarButton.h; sourceTree = "<group>"; };
+		7F4ECAC41988673500566C51 /* CBSTopTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBSTopTabBarButton.m; path = CBSTopTabBar/CBSTopTabBarButton.m; sourceTree = "<group>"; };
+		7F4ECAC51988673500566C51 /* CBSTopTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBSTopTabBarController.h; path = CBSTopTabBar/CBSTopTabBarController.h; sourceTree = "<group>"; };
+		7F4ECAC61988673500566C51 /* CBSTopTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CBSTopTabBarController.m; path = CBSTopTabBar/CBSTopTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +128,7 @@
 		7F326EF9195B654C0050D24F /* CBSTopTabBarDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7F4ECAB519881B9600566C51 /* Assets */,
 				7F326F28195B65C90050D24F /* CBSTopTabBar */,
 				7F326F27195B65950050D24F /* Demo View */,
 				7F326F02195B654C0050D24F /* CBSAppDelegate.h */,
@@ -167,10 +181,24 @@
 		7F326F28195B65C90050D24F /* CBSTopTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				7F326F29195B65EC0050D24F /* CBSTopTabBarController.h */,
-				7F326F2A195B65EC0050D24F /* CBSTopTabBarController.m */,
+				7F4ECAC31988673500566C51 /* CBSTopTabBarButton.h */,
+				7F4ECAC41988673500566C51 /* CBSTopTabBarButton.m */,
+				7F4ECAC51988673500566C51 /* CBSTopTabBarController.h */,
+				7F4ECAC61988673500566C51 /* CBSTopTabBarController.m */,
 			);
 			name = CBSTopTabBar;
+			sourceTree = "<group>";
+		};
+		7F4ECAB519881B9600566C51 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7F4ECAB61988245600566C51 /* 01-refresh.png */,
+				7F4ECAB71988245600566C51 /* 02-redo.png */,
+				7F4ECAB81988245600566C51 /* 03-loopback.png */,
+				7F4ECAB91988245600566C51 /* 04-squiggle.png */,
+				7F4ECABA1988245600566C51 /* 05-shuffle.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +277,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4ECABF1988245600566C51 /* 05-shuffle.png in Resources */,
+				7F4ECABC1988245600566C51 /* 02-redo.png in Resources */,
+				7F4ECABD1988245600566C51 /* 03-loopback.png in Resources */,
+				7F4ECABE1988245600566C51 /* 04-squiggle.png in Resources */,
 				7F326F26195B65900050D24F /* CBSDemoViewController.xib in Resources */,
 				7F326EFE195B654C0050D24F /* InfoPlist.strings in Resources */,
+				7F4ECABB1988245600566C51 /* 01-refresh.png in Resources */,
 				7F326F06195B654C0050D24F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,9 +304,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F326F00195B654C0050D24F /* main.m in Sources */,
+				7F4ECAC81988673500566C51 /* CBSTopTabBarController.m in Sources */,
 				7F326F04195B654C0050D24F /* CBSAppDelegate.m in Sources */,
+				7F4ECAC71988673500566C51 /* CBSTopTabBarButton.m in Sources */,
 				7F326F25195B65900050D24F /* CBSDemoViewController.m in Sources */,
-				7F326F2C195B65EC0050D24F /* CBSTopTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

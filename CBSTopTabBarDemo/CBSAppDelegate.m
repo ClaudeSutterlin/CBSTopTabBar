@@ -19,18 +19,32 @@
     
     CBSDemoViewController *vc1 = [[CBSDemoViewController alloc] initWithNibName:@"CBSDemoViewController" bundle:nil];
     vc1.view.backgroundColor = [UIColor redColor];
-    vc1.title = @"First";
+    vc1.title = @"Home";
+    vc1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image: [UIImage imageNamed:@"01-refresh.png"]  selectedImage:[UIImage imageNamed:@"01-refresh.png"]];
     
     CBSDemoViewController *vc2 = [[CBSDemoViewController alloc] initWithNibName:@"CBSDemoViewController" bundle:nil];
     vc2.view.backgroundColor = [UIColor greenColor];
-    vc2.title = @"Second";
+    vc2.title = @"Profile";
+    vc2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Profile" image: [UIImage imageNamed:@"02-redo.png"]  selectedImage:[UIImage imageNamed:@"02-redo.png"]];
 
     CBSDemoViewController *vc3 = [[CBSDemoViewController alloc] initWithNibName:@"CBSDemoViewController" bundle:nil];
     vc3.view.backgroundColor = [UIColor blueColor];
-    vc3.title = @"Third";
+    vc3.title = @"Acumen";
+    vc3.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Acumen" image: [UIImage imageNamed:@"03-loopback.png"]  selectedImage:[UIImage imageNamed:@"03-loopback.png"]];
     
-    CBSTopTabBarController *topBarController = [[CBSTopTabBarController alloc] initWithViewControllers: @[vc1, vc2, vc3]];
+    CBSDemoViewController *vc4 = [[CBSDemoViewController alloc] initWithNibName:@"CBSDemoViewController" bundle:nil];
+    vc4.view.backgroundColor = [UIColor yellowColor];
+    vc4.title = @"My Rewards";
+    vc4.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"My Rewards" image: [UIImage imageNamed:@"04-squiggle.png"]  selectedImage:[UIImage imageNamed:@"04-squiggle.png"]];
+    
+    CBSDemoViewController *vc5 = [[CBSDemoViewController alloc] initWithNibName:@"CBSDemoViewController" bundle:nil];
+    vc5.view.backgroundColor = [UIColor purpleColor];
+    vc5.title = @"More";
+    vc5.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"More" image: [UIImage imageNamed:@"05-shuffle.png"]  selectedImage:[UIImage imageNamed:@"05-shuffle.png"]];
+    
+    CBSTopTabBarController *topBarController = [[CBSTopTabBarController alloc] initWithViewControllers: @[vc1, vc2, vc3, vc4, vc5]];
     topBarController.title = @"CBS Bar Demo";
+    topBarController.tabBarStyle = CBSTopTabBarStyleImage;
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: topBarController];
     navController.navigationBar.translucent = NO;

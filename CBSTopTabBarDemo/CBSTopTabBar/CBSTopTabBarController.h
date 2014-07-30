@@ -8,11 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, CBSTopTabBarStyle) {
+    CBSTopTabBarStyleImage = 0,
+    CBSTopTabBarStyleTitle,
+    CBSTopTabBarStyleImageAndTitle
+};
+
 @interface CBSTopTabBarController : UIViewController
 
 - (id) initWithViewControllers: (NSArray *) viewControllers;
 
 @property (strong, nonatomic) NSArray *viewControllers;
-@property (strong, nonatomic) IBOutlet UIView *menuBar;
+@property (strong, nonatomic) IBOutlet UIScrollView *menuBar;
+@property (nonatomic, assign) CBSTopTabBarStyle tabBarStyle;
 
 @end

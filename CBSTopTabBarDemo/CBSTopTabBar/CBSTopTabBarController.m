@@ -7,6 +7,7 @@
 //
 
 #import "CBSTopTabBarController.h"
+#import "CBSTopTabBarButton.h"
 
 @interface CBSTopTabBarController ()<UIPageViewControllerDataSource, UIPageViewControllerDelegate, UISearchBarDelegate>
 
@@ -21,6 +22,8 @@
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 @property (nonatomic) NSInteger selectedTab;
+@property (nonatomic) NSInteger buttonWidth;
+@property (nonatomic) NSInteger tabCount;
 
 @end
 
@@ -48,10 +51,12 @@
 - (void) setupUI{
     [self.view setClipsToBounds: YES];
     
-    _menuBar = [[UIView alloc] initWithFrame: CGRectMake(0, 0, self.view.frame.size.width,  40)];
+    _tabCount = 5;
+    
+    _menuBar = [[UIScrollView alloc] initWithFrame: CGRectMake(0, 0, self.view.frame.size.width,  40)];
     [self.view addSubview: _menuBar];
     
-    _indicatorView = [[UIView alloc] initWithFrame: CGRectMake(0, _menuBar.bounds.size.height-5, _menuBar.bounds.size.width/3, 5)];
+    _indicatorView = [[UIView alloc] initWithFrame: CGRectMake(0, _menuBar.bounds.size.height-5, _menuBar.bounds.size.width/_tabCount, 5)];
     [_menuBar addSubview: _indicatorView];
     
     _pageViewController = [[UIPageViewController alloc] initWithTransitionStyle: UIPageViewControllerTransitionStyleScroll
@@ -87,26 +92,54 @@
     [self setSelectedTab:btn.tag];
 }
 
+- (void) setTabBarStyle:(CBSTopTabBarStyle)tabBarStyle{
+    _tabBarStyle = tabBarStyle;
+    
+    // set the view controllers to redraw
+    [self setViewControllers: _viewControllers];
+}
+
 - (void) setViewControllers:(NSArray *)viewControllers{
     _viewControllers = viewControllers;
-
-    UIButton *menuButton;
-    _menuButtons = [[NSMutableArray alloc] init];
-    int index = 0;
-    float buttonWidth = self.view.bounds.size.width / 3;
-    for (UIViewController *vc in _viewControllers){
-        CGRect frame = CGRectMake(index * buttonWidth, 0, buttonWidth, _menuBar.bounds.size.height - _indicatorView.bounds.size.height);
-        menuButton = [[UIButton alloc] initWithFrame: frame];
-        [menuButton setTitle: vc.title forState: UIControlStateNormal];
-        [menuButton addTarget: self action:@selector(tabButtonsTouched:) forControlEvents: UIControlEventTouchUpInside];
-        menuButton.tag = index;
-        [_menuBar addSubview: menuButton];
-        index++;
-        
-        [_menuButtons addObject: menuButton];
+    
+    if (_menuButtons){
+        [self clearMenu];
     }
 
+    CBSTopTabBarButton *menuButton;
+    CBSTopTabBarButtonStyle buttonStyle;
+    
+    _menuButtons = [[NSMutableArray alloc] init];
+    int index = 0;
+    _buttonWidth = self.view.bounds.size.width / _tabCount;
+    for (UIViewController *vc in _viewControllers){
+        CGRect frame = CGRectMake(index * _buttonWidth, 0, _buttonWidth, _menuBar.bounds.size.height - _indicatorView.bounds.size.height);
+        
+        if (index < _viewControllers.count-1){
+            buttonStyle = CBSTopTabBarButtonStyleDivider;
+        }
+        else{
+            buttonStyle = CBSTopTabBarButtonStylePlain;
+        }
+        
+        menuButton = [[CBSTopTabBarButton alloc] initWithFrame: frame inTabBar: self withStyle: buttonStyle];
+        [menuButton setViewController: vc atIndex: index];
+        
+        [menuButton addTarget: self action:@selector(tabButtonsTouched:) forControlEvents: UIControlEventTouchUpInside];
+        [_menuBar addSubview: menuButton];
+        [_menuButtons addObject: menuButton];
+        index++;
+    }
+    
+    self.menuBar.contentSize = CGSizeMake(index*_buttonWidth, self.menuBar.frame.size.height);
+
     [self setSelectedTab: 0];
+}
+
+- (void) clearMenu{
+    for (UIButton *btn in _menuButtons){
+        [btn removeFromSuperview];
+    }
 }
 
 - (void) setSelectedTab:(NSInteger)selectedTab{
@@ -115,7 +148,6 @@
     if (_selectedTab > selectedTab){
         direction = UIPageViewControllerNavigationDirectionReverse;
     }
-
 
     _selectedTab = selectedTab;
     
@@ -167,11 +199,13 @@
     }
     
     CGRect menuFrame = self.menuBar.bounds;
-    int xOffset = self.menuBar.frame.size.width / 3;
+    int xOffset = self.menuBar.frame.size.width / _tabCount;
     CGRect indicatorFrame = CGRectMake(xOffset*selectedTab, menuFrame.size.height-5, xOffset, 5);
     [UIView animateWithDuration:0.25 animations:^{
         self.indicatorView.frame = indicatorFrame;
     }];
+    
+    //[self.menuBar setContentOffset: CGPointMake(selectedTab*_buttonWidth, 0)];
 }
 
 #pragma mark - UIPageViewControllerDataSource
@@ -189,6 +223,8 @@
     NSUInteger index = [self.viewControllers indexOfObject: viewController];
     index--;
     
+    NSLog(@"Index: %lu", (long)index);
+    
     if (index< _viewControllers.count){
         return [_viewControllers objectAtIndex: index];
     }
@@ -200,7 +236,9 @@
 #pragma mark - UIPageViewControllerDelegate
 - (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed {
     
-    UIViewController *viewController = _pageViewController.viewControllers[0];
+    UIViewController *viewController = pageViewController.viewControllers[0];
+    
+    NSLog(@"View: %@", viewController.tabBarItem.title);
     
     // Select tab
     NSUInteger index = [_viewControllers indexOfObject:viewController];

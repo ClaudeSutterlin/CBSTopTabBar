@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D0B2E102-AAFC-4662-A6E9-4C7F18FB21CE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CBSTopTabBarDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>633FEDF6-F42A-41E0-8E92-6438F6B37CB5</key>
+		<string>https://github.com/ClaudeSutterlin/CBSTopTabBar.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CBSTopTabBarDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>633FEDF6-F42A-41E0-8E92-6438F6B37CB5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ClaudeSutterlin/CBSTopTabBar.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>633FEDF6-F42A-41E0-8E92-6438F6B37CB5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>633FEDF6-F42A-41E0-8E92-6438F6B37CB5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CBSTopTabBarDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
